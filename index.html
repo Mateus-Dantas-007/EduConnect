@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projeto 06 - EduConnect</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Projeto 06 - EduConnect</h1>
+    <p>Portal interativo para estudos e revisões.</p>
+  </header>
+ <main>
+  <section class="content">
+    <h2>Portal EduConnect</h2>
+
+    <div class="controles">
+      <input type="text" id="inputBusca" placeholder="Pesquisar título...">
+      <select id="filtroCategoria">
+        <option value="Todos">Todas as Categorias</option>
+        <option value="Geral">Geral</option>
+        <option value="Saúde">Saúde</option>
+        <option value="Tecnologia">Tecnologia</option>
+      </select>
+    </div>
+
+    <div id="containerCards" class="container-cards"></div>
+
+    <hr>
+
+    <section class="cadastro">
+      <h3>Novo Registro</h3>
+      <form id="formCadastro">
+        <input type="text" id="titulo" placeholder="Título" required>
+        <select id="categoria" required>
+          <option value="Geral">Geral</option>
+          <option value="Saúde">Saúde</option>
+          <option value="Tecnologia">Tecnologia</option>
+        </select>
+        <input type="date" id="data" required>
+        <textarea id="descricao" placeholder="Descrição"></textarea>
+        <button type="submit">Adicionar</button>
+      </form>
+      <p id="mensagemSucesso" style="color: green; display: none;">Adicionado com sucesso!</p>
+    </section>
+  </section>
+</main>
+<script src="script.js"></script>
+  <footer>
+    <p>Projeto para prática de JavaScript - Projeto 06 - EduConnect</p>
+  </footer>
+</body>
+</html>
